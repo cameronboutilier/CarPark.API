@@ -1,5 +1,5 @@
 # About
-This is a coding assignment for Test Driven Solutions, to display my code habits and knowledge of .Net. 
+This is a coding assignment to display my code habits and knowledge of .Net. 
 It's a simple Car Park API that allows users to park cars, check parking availability, and calculate parking charges on 
 vehicle exit.
 
