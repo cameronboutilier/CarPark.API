@@ -36,7 +36,7 @@ I made the following assumptions when developing:
 - The database would not change frequently, so a basic SQL script was used to create, scaffold, and seed the
   database instead of using EF migration scripts.
 - VehicleReg values were unique and if a duplicate value was used the parking would fail with an error message.
--
+
 ## Questions
 There were some requirements that were missing form the initial instructions, bellow are the
 questions I would have for the client about this project and the considerations associated with
