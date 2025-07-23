@@ -1,7 +1,7 @@
 ﻿namespace CarPark.API.Models.Entities;
 
 /// <summary>
-/// Basicc entity for a parked car
+/// Basic entity for a parked car
 /// </summary>
 public class ParkedCar
 {

@@ -25,6 +25,8 @@ dotnet run
 If you receive and error please make sure you have the 
 [.Net 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) installed.
 
+The default URL to view and interact with the API via swagger is https://localhost:7087/swagger/index.html
+
 # Additional Notes
 ## Assumptions Made
 I made the following assumptions when developing:
@@ -34,7 +36,7 @@ for configurable pricing costs.
 - The database would not change frequently, so a basic SQL script was used to create, scaffold, and seed the
 database instead of using EF migration scripts.
 - VehicleReg values were unique and if a duplicate value was used the parking would fail with an error message.
-
+- 
 ## Questions
 There were some requirements that were missing form the initial instructions, bellow are the
 questions I would have for the client about this project and the considerations associated with
@@ -51,3 +53,16 @@ database.
 - Is any of the code likely to be used elsewhere?
 If so it would be pertinent to extract any of the domain object and code, and put them in their own project to 
 either be referenced by other projects or be compiled into a nuget package.
+- Does the VehicleReg parameter follow a specific patters or have a defined max size? If so additional validation
+could be done on parameters passed in and the database column containing that value could be set to an appropriate
+max size.
+
+## Other Considerations
+
+### Logging: 
+  I chose to omit logging from this project for the sake of brevity, but added some comments above
+  specific classes and methods to better explain some of my methodology.
+
+### Additional Questions
+  If there are any questions about the pattern I used or why I made some of the decisions I did feel
+  free to reach out and ask. 

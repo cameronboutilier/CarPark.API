@@ -6,5 +6,5 @@
 /// </summary>
 public class ParkingCostConfig
 {
-    public double CostPerMinute { get; set; } = 0.1d;
+    public double CostPerMinute { get; init; } = 0.1d;
 }

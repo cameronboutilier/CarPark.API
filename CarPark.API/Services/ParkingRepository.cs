@@ -26,7 +26,7 @@ public class ParkingRepository(ParkingDbContext dbContext) : IParkingRepository
         
         if(space == null) return null;
         
-        var parkedCar = ParkedCars.Add(new ParkedCar()
+        ParkedCars.Add(new ParkedCar()
         {
             VehicleReg = vehicleReg,
             ParkingDate = DateTime.UtcNow,

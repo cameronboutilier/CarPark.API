@@ -1,11 +1,9 @@
 ﻿using CarPark.API.Contracts;
 using CarPark.API.Models;
 using CarPark.API.Models.Configuration;
-using CarPark.API.Models.Entities;
 using Microsoft.Extensions.Options;
 
 namespace CarPark.API.Services;
-
 
 /// <summary>
 /// Parking service to contain all business logic and provide 
